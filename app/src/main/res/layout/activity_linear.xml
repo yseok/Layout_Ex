@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yuseok.android.layout_ex.LinearActivity">
+
+    <Button
+        android:id="@+id/btnConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Constraint Layout" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btnRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Relative Layout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.52"
+        android:text="LinearLayout은 vertical과 horizontal 두가지 orientation속성을 설정 할 수 있으며 위 예제는 vertical(수직)속성을 사용하여 한줄에 한가지의 위젯을 위치시켜 놓았다." />
+</LinearLayout>

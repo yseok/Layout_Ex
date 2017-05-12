@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yuseok.android.layout_ex.RelativeActivity">
+
+    <Button
+        android:id="@+id/btnConstraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Constraint Layout" />
+
+    <Button
+        android:id="@+id/btnLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnConstraint"
+        android:text="Linear Layout" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Button"
+        android:layout_below="@+id/btnLinear"
+        android:layout_toRightOf="@+id/button4"
+        android:layout_toEndOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_alignTop="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toLeftOf="@+id/button4"
+        android:layout_toStartOf="@+id/button4"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="117dp"
+        android:text="위젯의 배치를 마음대로 할 수 있으며 자유도가 높다." />
+</RelativeLayout>
